@@ -1,0 +1,69 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  LEARNER
+  ADMIN
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+model User {
+  id          String       @id @default(uuid())
+  email       String       @unique
+  password    String
+  role        Role         @default(LEARNER)
+  createdAt   DateTime     @default(now())
+  submissions Submission[]
+}
+
+model Scenario {
+  id          String       @id @default(uuid())
+  title       String
+  description String
+  difficulty  Difficulty
+  category    String       // Category like "System Design", "Databases", etc.
+  createdAt   DateTime     @default(now())
+  submissions Submission[]
+}
+
+model Submission {
+  id                   String     @id @default(uuid())
+  answer               String
+  
+  // Overall score and feedback
+  score                Int?
+  feedback             String?
+
+  // AI Evaluation rubrics (out of 25 each)
+  problemUnderstanding Int?
+  tradeoffAnalysis     Int?
+  riskAnalysis         Int?
+  decisionQuality      Int?
+
+  // detailed list stored as newline-separated or JSON
+  strengths            String?
+  weaknesses           String?
+
+  // Mentor Challenge
+  challengeQuestion    String?
+  challengeAnswer      String?
+  challengeFeedback    String?
+
+  scenarioId           String
+  scenario             Scenario   @relation(fields: [scenarioId], references: [id], onDelete: Cascade)
+
+  userId               String
+  user                 User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt            DateTime   @default(now())
+}
