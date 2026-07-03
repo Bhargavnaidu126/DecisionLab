@@ -4,9 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run vercel-build",
+    "vercel-build": "prisma generate && prisma migrate deploy && next build",
+    "postinstall": "prisma generate",
     "start": "next start",
     "lint": "eslint"
+  },
+  "engines": {
+    "node": "24.x"
   },
   "dependencies": {
     "@google/genai": "^2.8.0",

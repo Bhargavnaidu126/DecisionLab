@@ -28,7 +28,7 @@ export default function Home() {
               href="/register"
               className="px-8 py-3.5 text-base font-bold text-white bg-gradient-to-r from-indigo-500 to-violet-500 hover:from-indigo-600 hover:to-violet-600 rounded-xl transition-all hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-indigo-500/20"
             >
-              Start Practicing Free
+              Start Practicing
             </Link>
             <Link
               href="/login"
