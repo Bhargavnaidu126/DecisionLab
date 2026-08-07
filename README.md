@@ -1,3 +1,161 @@
+# DecisionLab – AI Engineering Judgment Simulator
+
+DecisionLab is an AI-powered platform that helps software engineers improve their system design and architectural decision-making skills by solving real-world engineering scenarios.
+
+---
+
+## Features
+
+- AI-powered engineering judgment evaluation
+- Real-world production scenarios
+- System Design challenges
+- Rubric-based scoring
+- Personalized AI feedback
+- User authentication
+- Performance dashboard
+- Progress tracking
+
+---
+
+## Tech Stack
+
+### Frontend
+- Next.js
+- React.js
+- TypeScript
+- Tailwind CSS
+
+### Backend
+- Node.js
+- Express.js
+- REST APIs
+
+### Database
+- PostgreSQL
+- Prisma ORM
+
+### AI
+- Google Gemini API
+
+### Tools
+- Git
+- GitHub
+- Vercel
+
+---
+
+## Problem Statement
+
+Traditional coding platforms focus mainly on syntax and algorithms. DecisionLab helps developers improve engineering judgment by presenting production-scale software engineering problems requiring architectural reasoning and trade-off analysis.
+
+---
+
+## Key Features
+
+### Engineering Scenarios
+
+Practice solving:
+
+- Database Scaling
+- Microservices
+- Distributed Systems
+- Caching
+- API Design
+- Security
+- High Availability
+- Load Balancing
+
+---
+
+### AI Evaluation
+
+Every submission is evaluated using Gemini AI based on:
+
+- Problem Understanding
+- Trade-off Analysis
+- Risk Analysis
+- Decision Quality
+
+---
+
+### Dashboard
+
+Users can
+
+- Track scores
+- Review past submissions
+- Analyze strengths
+- Identify weak areas
+
+---
+
+## Architecture
+
+Frontend
+↓
+
+Next.js + React
+
+↓
+
+REST API
+
+↓
+
+Node.js + Express
+
+↓
+
+PostgreSQL + Prisma
+
+↓
+
+Gemini AI
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/yourusername/DecisionLab.git
+```
+
+```bash
+cd DecisionLab
+```
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
+---
+
+## Future Improvements
+
+- Leaderboards
+- Multi-language support
+- Interview Mode
+- Team Challenges
+- Admin Dashboard
+- Docker Deployment
+- CI/CD
+- Redis Caching
+
+---
+
+## Live Demo
+
+https://your-demo-link.vercel.app
+
+---
+
+## GitHub Repository
+
+https://github.com/yourusername/DecisionLab
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
