@@ -149,7 +149,7 @@ npm run dev
 
 ## Live Demo
 
-https://your-demo-link.vercel.app
+https://decision-lab-seven.vercel.app
 
 ---
 
